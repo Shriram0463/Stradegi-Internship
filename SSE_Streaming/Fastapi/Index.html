@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Responses</title>
+    <style>
+        #response-container {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+            min-height: 200px;
+            overflow-y: scroll;
+            white-space: pre-wrap; /* Ensure line breaks are respected */
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Responses</h1>
+    <div id="response-container"></div>
+
+    <script>
+        const eventSource = new EventSource('/stream-ai-responses');
+        let currentSentence = '';
+
+        eventSource.onmessage = function(event) {
+            const responseContainer = document.getElementById('response-container');
+            const char = event.data;
+
+            if (char === '') {
+                // If we receive an empty char, it means the sentence has ended
+                responseContainer.textContent += '\n';
+                currentSentence = '';
+            } else {
+                // Otherwise, append the character to the current sentence
+                currentSentence += char;
+                responseContainer.textContent += char;
+            }
+        };
+
+        eventSource.onerror = function(event) {
+            console.error("EventSource error:", event);
+            eventSource.close();
+        };
+    </script>
+</body>
+</html>
