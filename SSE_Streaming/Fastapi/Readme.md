@@ -5,12 +5,15 @@ This project demonstrates how to create a real-time AI assistant using FastAPI a
 ## Overview
 
 This application utilizes FastAPI, a modern, fast (high-performance), web framework for building APIs with Python 3.7+.
+
 The frontend of the application is a simple HTML page that listens to Server-Sent Events (SSE) endpoint /stream-ai-responses provided by FastAPI. As sentences are generated on the server, they are streamed to the client using SSE, enabling real-time updates without the need for client-side polling.
 
 ## Features
 
 Real-time streaming of AI-generated sentences to the client browser.
+
 Simple and responsive HTML interface to display streamed sentences.
+
 Demonstrates asynchronous programming with asyncio in Python.
 
 
