@@ -2,26 +2,6 @@
 
 This project demonstrates a simple AI streaming assistant using Spring Boot and WebSockets. The assistant responds to user input in real-time, streaming responses letter by letter.
 
-## Project Structure
-
-Springboot/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── websocket/
-│   │   │               ├── Application.java
-│   │   │               ├── WebSocketConfig.java
-│   │   │               └── WebSocketHandler.java
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── static/
-│   │           └── index.html
-├── pom.xml
-└── README.md
-
-
 
 ### Files Overview
 
