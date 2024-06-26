@@ -6,18 +6,21 @@ This project demonstrates a simple AI streaming assistant using Spring Boot and 
 
 Springboot/
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── com/
-│ │ │ │ ├── example/
-│ │ │ │ │ ├── websocket/
-│ │ │ │ │ │ ├── Application.java
-│ │ │ │ │ │ ├── TokenWebSocketHandler.java
-│ │ │ │ │ │ ├── TokenWebSocketConfig.java
-│ ├── resources/
-│ │ ├── static/
-│ │ │ ├── index.html
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── websocket/
+│   │   │               ├── Application.java
+│   │   │               ├── WebSocketConfig.java
+│   │   │               └── WebSocketHandler.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │           └── index.html
 ├── pom.xml
+└── README.md
+
 
 
 ### Files Overview
