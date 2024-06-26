@@ -14,10 +14,10 @@ This project is a real-time AI assistant built using FastAPI, WebSockets, and Re
 - Python 3.7+
 - Node.js (for development, if you need to make changes to the frontend)
 
-## Code Structure
+### Code Structure
 Fastapi/
 ├── main.py
 └── index.html
 
-## License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
