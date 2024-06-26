@@ -1,4 +1,4 @@
-### Streaming AI Assistant with FastAPI and Server-Sent Events (SSE)
+# Streaming AI Assistant with FastAPI and Server-Sent Events (SSE)
 
 This project demonstrates how to create a real-time AI assistant using FastAPI and Server-Sent Events (SSE). The assistant streams sentences to a web client where they are displayed in real-time.
 
