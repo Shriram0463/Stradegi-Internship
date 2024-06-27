@@ -6,6 +6,7 @@ This project demonstrates how to create a streaming AI assistant using Spring Bo
 ## Prerequisites
 
 Before running this project, ensure you have the following installed:
+
 Java 11 or higher
 Maven
 
@@ -13,23 +14,23 @@ Maven
 ## Project Overview
 1. ### StreamingAiApplication.java
 
-Main class that initializes and runs the Spring Boot application.
+  Main class that initializes and runs the Spring Boot application.
 
 2. ### AIResponseController.java
 
-REST controller handling the SSE endpoint /stream-ai-responses to stream AI responses.
+  REST controller handling the SSE endpoint /stream-ai-responses to stream AI responses.
 
 3. ### index.html
 
-HTML file providing a basic interface to display streamed AI responses.
+  HTML file providing a basic interface to display streamed AI responses.
 
 4. ### application.properties
 
-Configuration file for Spring Boot application properties.
+  Configuration file for Spring Boot application properties.
 
 5. ### pom.xml
 
-Maven project file defining dependencies and plugins for the project.
+  Maven project file defining dependencies and plugins for the project.
 
 
 ## License
