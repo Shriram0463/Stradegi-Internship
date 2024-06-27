@@ -8,7 +8,19 @@ This project demonstrates how to create a streaming AI assistant using Spring Bo
 Before running this project, ensure you have the following installed:
 
 Java 11 or higher
+
 Maven
+
+
+## Features
+
+Real-Time Streaming of AI Responses
+
+Interactive Web Interface
+
+Asynchronous Programming
+
+Build and Run Instructions
 
 
 ## Project Overview
