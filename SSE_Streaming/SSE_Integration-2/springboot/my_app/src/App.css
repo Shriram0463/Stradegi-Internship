@@ -1,0 +1,25 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Set font family */
+}
+
+#messages {
+  font-size: 40px; /* Adjust font size as needed */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+}
+
+.message-item {
+  display: block; /* Display messages in block */
+  margin-bottom: 60px; /* Adjust spacing between lines */
+  animation: slide-in 1s ease-in-out forwards; /* Slide animation */
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%); /* Start off-screen left */
+  }
+  100% {
+    transform: translateX(0); /* Slide to original position */
+  }
+}

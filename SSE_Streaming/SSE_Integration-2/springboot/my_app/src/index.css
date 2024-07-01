@@ -1,0 +1,34 @@
+/* index.css */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#messages {
+  font-size: 40px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.message-item {
+  display: block;
+  margin-bottom: 40px;
+  padding: 5px 10px;
+  border-left: 3px solid #007bff;
+}
+
+.message-item:nth-child(even) {
+  background-color: #f0f0f0;
+}
