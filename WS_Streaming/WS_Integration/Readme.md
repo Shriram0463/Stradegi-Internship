@@ -9,7 +9,7 @@ This project integrates a Spring Boot WebSocket server with a FastAPI backend to
 
 
 ## Features
-Real-time streaming of responses one letter at a time.
+Real-time streaming of AI responses one letter at a time.
 
 WebSocket communication between the frontend and Spring Boot server.
 
@@ -20,27 +20,27 @@ Frontend built with HTML, JavaScript, and React.
 
 ## File Overview
 
-# Backend
+## Backend
 
-## Spring Boot
+### Spring Boot
 **WebSocketHandler.java**: Handles WebSocket connections and streams messages from FastAPI to the client.
 
 **application.properties**: Configuration properties for the Spring Boot application.
 
 **pom.xml**: Maven configuration file for managing dependencies and building the Spring Boot application.
 
-## FastAPI
+### FastAPI
 **main.py**: FastAPI application that processes incoming messages and streams responses one letter at a time to the Spring Boot server.
 
 **requirements.txt**: List of Python dependencies required for the FastAPI application.
 
-# Frontend
+## Frontend
 
 **index.html**: The main HTML file that contains the structure of the web page and references to the necessary scripts.
 
 **script.js**: JavaScript file that handles WebSocket connections and user interactions on the frontend.
 
 
-# License
+## License
 
 This project is licensed under the MIT License.
