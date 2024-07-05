@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './App.css'; 
+import './App.css';
 
 function App() {
   const [text, setText] = useState('');
@@ -29,8 +29,13 @@ function App() {
 
   return (
     <div className="App">
-      <textarea value={text} readOnly />
-      <button onClick={handleClick}>Fetch Text</button>
+      <h1 className="heading">AI Response</h1>
+      <textarea
+        value={text}
+        readOnly
+        className="textarea" // Apply the new class here
+      />
+      <button className="fetch-button" onClick={handleClick}>Fetch Text</button>
     </div>
   );
 }
