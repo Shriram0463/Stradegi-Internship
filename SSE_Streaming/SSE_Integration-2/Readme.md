@@ -35,7 +35,7 @@ To send messages to the backend (Spring Boot) via FastAPI, use the following cur
 
 Replace "Message 1", "Message 2", "Message 3" with your desired messages. This command sends a POST request to the FastAPI endpoint at http://localhost:8000/send-messages with a JSON payload containing the messages array.
 
-After sending this, run react app to start the application.
+After sending the messages, run react app to start the application.
 
 
 ## Prerequisites
