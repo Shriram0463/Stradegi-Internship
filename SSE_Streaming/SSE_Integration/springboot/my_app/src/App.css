@@ -1,38 +1,38 @@
+/* App.css */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start; /* Align content at the top of the container */
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
 }
 
-.App-link {
-  color: #61dafb;
+.textarea {
+  width: 40%; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px; /* Add some padding for better readability */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  margin: 20px 0; /* Add margin top and bottom */
+  border: 1px solid black; /* Set border color to white */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetch-button {
+  background-color: green; /* Set button background color to green */
+  color: white; /* Set button text color to white */
+  padding: 10px 20px; /* Add padding to button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add some border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.fetch-button:hover {
+  background-color: green; /* Darken button background color on hover */
+}
+
+.heading {
+  margin: 20px 0; /* Add margin top and bottom for the heading */
 }
