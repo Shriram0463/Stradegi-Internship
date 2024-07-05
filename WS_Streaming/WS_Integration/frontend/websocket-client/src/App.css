@@ -1,0 +1,49 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; /* Apply Times New Roman to the entire app */
+}
+
+.App {
+  text-align: left; /* Align text and inline elements to the left */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center; /* Center vertically */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
