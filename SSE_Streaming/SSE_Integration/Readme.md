@@ -27,6 +27,17 @@ The project consists of three main components:
 **React**: Frontend application to display the streamed messages.
 
 
+## Usage
+
+To send messages to the backend (Spring Boot) via FastAPI, use the following curl command in a seperate terminal after running Fastapi and Springboot:
+
+    curl -X POST http://localhost:8000/send-message
+
+This command sends a POST request to the FastAPI endpoint at http://localhost:8000/send-message with a JSON payload containing the messages array.
+
+After sending the message, run react app to start the application.
+
+
 ## Prerequisites
 
 Java 11 or higher
