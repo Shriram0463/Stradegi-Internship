@@ -31,14 +31,7 @@ The project consists of three main components:
 
 To send messages to the backend (Spring Boot) via FastAPI, use the following curl command in a seperate terminal after running Fastapi and Springboot:
 
-
-curl -X POST http://localhost:8000/send-messages  
-     
-     -H "Content-Type: application/json" 
-     
-     -d "{\"messages\": [\"Message 1\", \"Message 2\", \"Message 3\"]}"
-
-
+     curl -X POST http://localhost:8000/send-messages  -H "Content-Type: application/json"  -d "{\"messages\": [\"Message 1\", \"Message 2\", \"Message 3\"]}"
 
 Replace "Message 1", "Message 2", "Message 3" with your desired messages. This command sends a POST request to the FastAPI endpoint at http://localhost:8000/send-messages with a JSON payload containing the messages array.
 
