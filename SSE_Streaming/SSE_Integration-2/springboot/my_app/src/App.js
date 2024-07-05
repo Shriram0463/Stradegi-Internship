@@ -25,7 +25,7 @@ function App() {
     const interval = setInterval(() => {
       if (index < textData.length) {
         if (textData[index] === '\n') {
-          displayText += '<br><br>'; // Insert line break for new line
+          displayText += '<br><br>'; // Insert two line breaks for extra space
         } else {
           displayText += textData[index]; // Append each letter to display text
         }
@@ -39,6 +39,8 @@ function App() {
 
   return (
     <div className="App">
+      <h1>AI Responses</h1> {/* Add the heading here */}
+      {/* Render HTML with dangerouslySetInnerHTML to interpret <br> tags */}
       <div dangerouslySetInnerHTML={{ __html: text }}></div>
     </div>
   );
