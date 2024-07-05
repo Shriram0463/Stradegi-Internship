@@ -25,7 +25,7 @@ function App() {
     const interval = setInterval(() => {
       if (index < textData.length) {
         if (textData[index] === '\n') {
-          displayText += '<br>'; // Insert line break for new line
+          displayText += '<br><br>'; // Insert line break for new line
         } else {
           displayText += textData[index]; // Append each letter to display text
         }
