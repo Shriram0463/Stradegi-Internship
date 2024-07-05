@@ -1,25 +1,62 @@
 body {
-  font-family: 'Times New Roman', Times, serif; /* Set font family */
+  font-family: 'Times New Roman', Times, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-#messages {
-  font-size: 40px; /* Adjust font size as needed */
-  text-align: left; /* Align text to the left */
-  white-space: nowrap; /* Prevent line breaks */
-  overflow: hidden; /* Hide overflow */
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.message-item {
-  display: block; /* Display messages in block */
-  margin-bottom: 60px; /* Adjust spacing between lines */
-  animation: slide-in 1s ease-in-out forwards; /* Slide animation */
+h1 {
+  text-align: left;
+  color: #333;
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateX(-100%); /* Start off-screen left */
-  }
-  100% {
-    transform: translateX(0); /* Slide to original position */
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#root {
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #ffffff;
+  border-left: 4px solid #4CAF50;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    max-width: 80%;
   }
 }
